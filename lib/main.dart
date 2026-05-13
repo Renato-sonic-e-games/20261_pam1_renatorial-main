@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -41,12 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       //menu lateral esquerdo
       drawer: Drawer( // construtor da classe Drawer
-      child: Text("Menu esquerdo"), // conteudo interno
+      child: const Text("Menu esquerdo"), // conteudo interno
       backgroundColor: Colors.redAccent, // cor de fundo
       ),
       //menu lateral direito
-      endDrawer: Drawer( // construtor da classe endDrawer
-      child: Text("Menu direito"), // conteudo interno
+      endDrawer: Drawer( // construtor da classe Drawer (do lado direito do scaffold)
+      child: const Text("Menu direito"), // conteudo interno
       backgroundColor: Colors.redAccent, // cor de fundo
       ),
       // footer
