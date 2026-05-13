@@ -41,18 +41,22 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       //menu lateral esquerdo
       drawer: Drawer( // construtor da classe Drawer
-      child: const Text("Menu esquerdo"), // conteudo interno
+      child: const Center( // centraliza o texto
+      child: Text("Menu esquerdo"), // conteudo interno
+      ),
       backgroundColor: Colors.redAccent, // cor de fundo
       ),
       //menu lateral direito
       endDrawer: Drawer( // construtor da classe Drawer (do lado direito do scaffold)
-      child: const Text("Menu direito"), // conteudo interno
+      child: const Center( // centraliza o texto
+      child: Text("Menu direito"), // conteudo interno
+      ), 
       backgroundColor: Colors.redAccent, // cor de fundo
       ),
       // footer
       bottomNavigationBar: BottomAppBar( // construtor da classe BottomAppBar
         color: Colors.redAccent, // cor de fundo
-        child: Text("Desenvolvimento Mobile com Flutter") // conteudo interno
+        child: const Text("Desenvolvimento Mobile com Flutter") // conteudo interno
       ),
       //botão flutuante
       floatingActionButton: FloatingActionButton( // construtor da classe FloatingActionButton
